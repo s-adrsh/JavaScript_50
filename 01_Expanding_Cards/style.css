@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100svw;
+  padding: 2rem;
+  display: flex;
+  min-height: 100svh;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.panel {
+  height: 80svh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  display: flex;
+  transition: all 0.8s ease-in;
+  flex-grow: 0.5;
+  cursor: pointer;
+}
+
+.panel h3 {
+  display: hidden;
+  color: #fff;
+  align-self: self-end;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  opacity: 0;
+}
+
+.active {
+  flex-grow: 8;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: 0.5s ease-in 0.7s;
+}
+
+@media (max-width: 500px) {
+  .panel:nth-child(4) {
+    display: none;
+  }
+  .panel:nth-child(5) {
+    display: none;
+  }
+}
