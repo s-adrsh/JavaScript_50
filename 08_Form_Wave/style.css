@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Muli", sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  background-color: steelblue;
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0.5rem;
+  width: 400px;
+  padding: 1.8rem 2.5rem;
+  color: #fff;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem auto 1.8rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.form-controls input {
+  background-color: transparent;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  outline: none;
+  color: #fff;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  display: block;
+  width: 100%;
+}
+
+.form-controls input:focus,
+.form-controls input:valid {
+  outline: none;
+  border-bottom-color: lightblue;
+}
+.form-controls {
+  position: relative;
+  margin-top: 1rem;
+}
+.form-controls label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  pointer-events: none;
+  font-size: 1.1rem;
+}
+
+.form-controls label span {
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  display: inline-block;
+  min-width: 5px;
+  font-size: 1.1rem;
+}
+.form-controls input:focus + label span,
+.form-controls input:valid + label span {
+  color: lightblue;
+  transform: translateY(-30px);
+}
+form button {
+  background-color: lightblue;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  color: rgb(16, 51, 80);
+}
+form button:active {
+  transform: scale(0.98);
+}
+
+.sign-up {
+  margin-bottom: 0.8rem;
+}
+.sign-up a {
+  text-decoration: none;
+  color: lightblue;
+}

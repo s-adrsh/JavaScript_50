@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Input Wave</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login">
+        <div class="heading">Please Login</div>
+        <div class="form">
+          <form action="">
+            <div class="form-controls">
+              <input type="text" id="email" required autocomplete="off" />
+              <label for="email" id="email-label">Email</label>
+            </div>
+
+            <div class="form-controls">
+              <input type="password" id="password" required />
+              <label for="password" id="password-label">Password</label>
+            </div>
+
+            <button type="submit" id="submit">Login</button>
+          </form>
+        </div>
+        <div class="sign-up">
+          Don't have an account? <a href="#">Register</a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
