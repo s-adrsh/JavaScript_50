@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Event KeyCodes</title>
+  </head>
+  <body class="text-lg bg-sky-100">
+    <div
+      id="keypress"
+      class="hidden flex max-md:flex-col h-screen justify-center items-center gap-8 text-center"
+    >
+      <div class="">
+        <p class="" id="key">Key</p>
+        <div
+          id="div-key"
+          class="codes w-36 bg-white h-16 align-bottom leading-[4rem] shadow-2xl"
+        ></div>
+      </div>
+      <div class="">
+        <p class="" id="key-code">KeyCode</p>
+        <div
+          id="div-keycode"
+          class="codes w-36 bg-white h-16 leading-[4rem] shadow-2xl"
+        ></div>
+      </div>
+      <div class="">
+        <p class="" id="code">Event code</p>
+        <div
+          id="div-code"
+          class="codes w-36 bg-white leading-[4rem] h-16 shadow-2xl"
+        ></div>
+      </div>
+    </div>
+    <div id="home" class="flex justify-center h-screen items-center">
+      <div class="shadow bg-white py-6 px-12">
+        Press any key to get the Keycode
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
